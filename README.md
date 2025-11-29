@@ -21,8 +21,6 @@ You can install `Dominfo` via pip:
 pip install dominfo
 ```
 
-*(Note: Ensure you have a `pyproject.toml` or `setup.py` configured to expose the console script. If not, you can run it via `python -m dominfo`)*.
-
 -----
 
 ## 🚀 Usage
