@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.2](https://github.com/M4RC0Sx/Dominfo/compare/v1.0.1...v1.0.2) (2025-11-29)
+
+### Documentation
+
+* improve readme ([6f9b524](https://github.com/M4RC0Sx/Dominfo/commit/6f9b5245309682777ffd434f30de62623cef487f))
+
 ## [1.0.1](https://github.com/M4RC0Sx/Dominfo/compare/v1.0.0...v1.0.1) (2025-11-29)
 
 ### Miscellaneous Chores
