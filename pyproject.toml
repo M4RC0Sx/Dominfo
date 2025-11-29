@@ -1,6 +1,6 @@
 [project]
 name = "dominfo"
-version = "0.0.0"
+version = "1.0.0"
 description = "A modern, lightweight Python library and CLI for WHOIS domain lookups."
 authors = [
     {name = "M4RC0Sx",email = "contact@marcosalonso.dev"}
