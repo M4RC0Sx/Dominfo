@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1](https://github.com/M4RC0Sx/Dominfo/compare/v1.0.0...v1.0.1) (2025-11-29)
+
+### Miscellaneous Chores
+
+* add py.typed ([b50f6a9](https://github.com/M4RC0Sx/Dominfo/commit/b50f6a969573ccf628493458bc64f2dd3d6cbce1))
+
 ## 1.0.0 (2025-11-29)
 
 ### Features
