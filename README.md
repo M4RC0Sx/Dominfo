@@ -35,23 +35,25 @@ You can run `dominfo` directly from your terminal to get information about a dom
 Get a pretty-printed overview of the domain.
 
 ```bash
-python -m dominfo bot.ai
+python -m dominfo google.com
 ```
 
 **JSON Output:**
 Get the output in machine-readable JSON format (useful for piping into `jq` or other tools).
 
 ```bash
-python -m dominfo bot.ai --json
+python -m dominfo google.com --json
 # or
-dominfo bot.ai -j
+dominfo google.com -j
 ```
+
+![cli-img](docs/cli-img.png)
 
 **Custom IANA Server:**
 Specify a specific WHOIS server if needed.
 
 ```bash
-python -m dominfo bot.ai --iana-server whois.nic.ai
+python -m dominfo google.com --iana-server whois.nic.ai
 ```
 
 ### 2\. As a Python Library
@@ -65,7 +67,7 @@ from dominfo.client import DominfoClient
 client = DominfoClient()
 
 # Fetch WHOIS information
-whois_info = client.get_whois_info("bot.ai")
+whois_info = client.get_whois_info("google.com")
 
 # Print the result (returns a dictionary/object)
 print(whois_info)
