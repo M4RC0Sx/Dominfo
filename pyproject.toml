@@ -1,0 +1,98 @@
+[project]
+name = "dominfo"
+version = "0.0.0"
+description = "A modern, lightweight Python library and CLI for WHOIS domain lookups."
+authors = [
+    {name = "M4RC0Sx",email = "contact@marcosalonso.dev"}
+]
+readme = "README.md"
+requires-python = ">=3.9,<4.0"
+license = {text = "MIT"}
+keywords = ["whois", "domain", "iana", "dns", "cli", "network"]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Internet :: Name Service (DNS)",
+    "Topic :: Utilities",
+]
+
+dependencies = [
+    "typer (>=0.19.2,<0.20.0)",
+    "rich (>=14.2.0,<15.0.0)"
+]
+
+[project.urls]
+Homepage = "https://github.com/M4RC0Sx/dominfo"
+Repository = "https://github.com/M4RC0Sx/dominfo"
+Documentation = "https://github.com/M4RC0Sx/dominfo/blob/main/README.md"
+Issues = "https://github.com/M4RC0Sx/dominfo/issues"
+
+[project.scripts]
+dominfo = "dominfo.cli:main"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.13.2"
+mypy = "^1.18.2"
+pandas = "^2.3.3"
+
+[tool.ruff]
+fix = true
+line-length = 88
+
+[tool.ruff.lint]
+unfixable = [
+    "ERA", # do not autoremove commented out code
+]
+extend-select = [
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "ERA", # flake8-eradicate/eradicate
+    "I",   # isort
+    "N",   # pep8-naming
+    "PIE", # flake8-pie
+    "PGH", # pygrep
+    "RUF", # ruff checks
+    "SIM", # flake8-simplify
+    "TCH", # flake8-type-checking
+    "TID", # flake8-tidy-imports
+    "UP",  # pyupgrade
+]
+ignore = [
+    "ERA001"
+]
+
+[tool.ruff.lint.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[tool.ruff.lint.isort]
+force-single-line = true
+lines-between-types = 1
+lines-after-imports = 2
+known-first-party = ["dominfo"]
+required-imports = ["from __future__ import annotations"]
+
+[tool.mypy]
+namespace_packages = true
+show_error_codes = true
+enable_error_code = [
+    "ignore-without-code",
+    "redundant-expr",
+    "truthy-bool",
+]
+strict = true
+files = ["dominfo", "tests"]
