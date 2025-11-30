@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.4](https://github.com/M4RC0Sx/Dominfo/compare/v1.0.3...v1.0.4) (2025-11-30)
+
+### Miscellaneous Chores
+
+* change typer and rich deps pin ([a7fad99](https://github.com/M4RC0Sx/Dominfo/commit/a7fad99b8f35eb7bbc7017e42014c624c3f49be8))
+
 ## [1.0.3](https://github.com/M4RC0Sx/Dominfo/compare/v1.0.2...v1.0.3) (2025-11-29)
 
 ### Documentation
